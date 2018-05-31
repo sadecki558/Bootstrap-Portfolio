@@ -96,6 +96,7 @@ main b{
 #profilepicture {
     float: left;
     width: 150px;
+    height: 150px;
     margin-right: 20px;
 }
 #portfoliopicture{
@@ -129,7 +130,25 @@ main b{
     line-height: 100px;
     vertical-align: middle;
 }
+.bar {
+    width: 95%;
+    border-bottom: 3px solid #dddddd;
+    margin-bottom: 20px;
+}
 
+.jumbotron {
+    z-index: 1;
+    position: absolute;
+    padding: 30px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 900px;
+    height: 50%;
+    margin: auto;
+    background-color: #ffffff;
+}
 header {
     position: fixed;
     z-index: 2;
@@ -155,7 +174,7 @@ nav {
     vertical-align: middle;
 }
 
-header li {
+ul li a{
     display: block;
     float: right;
     border-left: 0.25px solid gray;
@@ -163,20 +182,22 @@ header li {
     padding-right: 20px;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 1.25em;
-    margin-top: 35px;
+    margin-bottom: 100px;
 }
-li a {
+
+
+ul li a {
     display: block;
     text-align: center;
     text-decoration: none;
 }
-li a:default {
+ul li a:default {
     color: #777777;
 }
-li a:visited {
+ul li a:visited {
     color: #777777;
 }
-li:last-child {
+ul li:last-child {
     border-left: none;
     padding-left: 0;
 }
@@ -186,3 +207,21 @@ body {
     background-repeat: repeat;
 }
 
+.footerBgc{
+    z-index: 2;
+    position: fixed;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    margin-top: 300px; 
+    background-color: #666666;
+    border-top: 8px #4aaaa5 solid;
+}
+
+.text-center {
+    font-size: 1em;
+    color: #d8d8d8;
+    position: fixed;
+    display: inline-block;
+    bottom: 0;
+}
